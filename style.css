@@ -22,6 +22,9 @@
     padding: 30px 15px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .user{
@@ -34,4 +37,42 @@
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.user-img{
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.star-img{
+    width: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+ul li p{
+    white-space: nowrap;
 }
