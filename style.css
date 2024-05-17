@@ -23,3 +23,15 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
 }
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
