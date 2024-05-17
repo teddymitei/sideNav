@@ -25,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    transition: width 0.5s;
 }
 
 .user{
@@ -76,10 +77,43 @@ ul li{
 
 ul li img{
     width: 30px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 ul li p{
     white-space: nowrap;
     display: none;
+}
+
+.side-nav:hover{
+    width: 250px;
+}
+
+.side-nav:hover .user div{
+    display: block;
+}
+.side-nav:hover .user{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.side-nav:hover .star-img{
+    display: block;
+}
+
+.side-nav:hover .user-img{
+    margin: 0;
+}
+
+.side-nav:hover ul li p{
+    display: block;
+}
+
+.side-nav:hover ul li img{
+    margin-right: 10px;
+}
+
+.side-nav:hover ul li{
+    justify-content: flex-start;
 }
